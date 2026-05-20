@@ -23,6 +23,10 @@
         "traits": [
           "5-strike",
           "contact",
+          "dash",
+          "sharp",
+          "crit-1",
+          "flinch-15",
           "digimon"
         ],
         "range": {
@@ -32,14 +36,15 @@
         },
         "cost": {
           "activation": "complex",
-          "powerPoints": 1
+          "powerPoints": 3
         },
         "types": [
+          "fighting",
           "dragon"
         ],
         "category": "physical",
-        "power": 20,
-        "accuracy": 80,
+        "power": 25,
+        "accuracy": 85,
         "predicate": []
       }
     ],

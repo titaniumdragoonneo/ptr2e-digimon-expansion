@@ -27,7 +27,7 @@
         ],
         "cost": {
           "activation": "complex",
-          "powerPoints": 9
+          "powerPoints": 8
         },
         "types": [
           "fighting",
@@ -35,13 +35,13 @@
         ],
         "category": "physical",
         "predicate": [],
-        "description": "<p>This attack has a 75% chance to inflict @Affliction[delay 50] to the target. The attack counts as both @Trait[fighting] and @Trait[fairy] type.</p>",
+        "description": "<p>Effect: On hit, the target has a 50% chance to gain @Affliction[delay 50]. This attack's Power ranges based on how damaged the user is, ranging from 80 to 180.</p>",
         "range": {
           "target": "creature",
           "distance": 1,
           "unit": "m"
         },
-        "power": 130,
+        "power": 180,
         "accuracy": 100
       }
     ],
@@ -62,7 +62,7 @@
             "key": "flashy-boss-punch-attack",
             "value": "Compendium.ptr2e.core-effects.Item.delayconditiitem",
             "predicate": [],
-            "chance": 75,
+            "chance": 50,
             "isFixedChance": false,
             "affects": "target",
             "alterations": [
@@ -76,6 +76,18 @@
             "phase": "initial",
             "method": 2,
             "ignored": false
+          },
+          {
+            "type": "percentile-modifier",
+            "key": "flashy-boss-punch-attack-power",
+            "value": "@actor.system.health.percent-100",
+            "label": "Reversal",
+            "predicate": [],
+            "priority": null,
+            "property": "power",
+            "definition": [],
+            "ignored": false,
+            "method": 2
           }
         ],
         "slug": null,

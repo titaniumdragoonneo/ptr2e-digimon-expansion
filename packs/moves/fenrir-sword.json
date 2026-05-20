@@ -27,14 +27,15 @@
         ],
         "cost": {
           "activation": "complex",
-          "powerPoints": 8
+          "powerPoints": 6
         },
         "types": [
+          "fighting",
           "ice"
         ],
         "category": "physical",
         "predicate": [],
-        "description": "<p>This attack has a 15% fixed chance to inflict @Affliction[perish 1].</p>",
+        "description": "<p>Effect: On hit, the target has a 15% chance of gaining @Affliction[weary 1].</p>",
         "range": {
           "target": "creature",
           "distance": 1,
@@ -59,7 +60,7 @@
           {
             "type": "roll-effect",
             "key": "fenrir-sword-attack",
-            "value": "Compendium.ptr2e.core-effects-new.ActiveEffect.perishcondition0",
+            "value": "Compendium.ptr2e.core-effects-new.ActiveEffect.wearycondition00",
             "predicate": [],
             "chance": 15,
             "isFixedChance": true,

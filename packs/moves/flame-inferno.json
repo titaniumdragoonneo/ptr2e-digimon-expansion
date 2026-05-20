@@ -23,11 +23,12 @@
         "traits": [
           "digimon",
           "sky",
+          "defrost",
           "blast-4"
         ],
         "cost": {
           "activation": "complex",
-          "powerPoints": 10
+          "powerPoints": 9
         },
         "types": [
           "fire"
@@ -36,7 +37,7 @@
         "predicate": [],
         "range": {
           "target": "creature",
-          "distance": 10,
+          "distance": 8,
           "unit": "m"
         },
         "power": 120,
@@ -46,7 +47,74 @@
     "grade": "S"
   },
   "img": "systems/ptr2e/img/svg/fire_icon.svg",
-  "effects": [],
+  "effects": [
+    {
+      "name": "Flame Inferno",
+      "type": "passive",
+      "_id": "cAV10wF3TLTfKpVn",
+      "img": "systems/ptr2e/img/icons/effect_icon.webp",
+      "system": {
+        "changes": [
+          {
+            "type": "percentile-modifier",
+            "key": "flame-inferno-attack-power",
+            "value": 50,
+            "predicate": [
+              "target:trait:psychic"
+            ],
+            "label": "Flame Inferno (Psychic)",
+            "mode": 2,
+            "ignored": false,
+            "hideIfDisabled": false
+          },
+          {
+            "type": "percentile-modifier",
+            "key": "flame-inferno-attack-power",
+            "value": 50,
+            "predicate": [
+              "target:trait:fairy"
+            ],
+            "label": "Flame Inferno (Fairy)",
+            "mode": 2,
+            "ignored": false,
+            "hideIfDisabled": false
+          }
+        ],
+        "slug": null,
+        "traits": [],
+        "removeAfterCombat": true,
+        "removeOnRecall": false,
+        "removeAfterAttacking": false,
+        "removeAfterAttacked": false,
+        "stacks": 0
+      },
+      "disabled": false,
+      "duration": {
+        "startTime": null,
+        "combat": null
+      },
+      "description": "",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": true,
+      "statuses": [],
+      "sort": 0,
+      "flags": {
+        "ptr2e": {
+          "displayOnToken": ""
+        }
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.347",
+        "systemId": "ptr2e",
+        "systemVersion": "1.4.3.beta",
+        "lastModifiedBy": null
+      }
+    }
+  ],
   "flags": {},
   "_id": "4GnSgaVSt1vLgCej"
 }

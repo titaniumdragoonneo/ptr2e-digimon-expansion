@@ -22,19 +22,20 @@
         "img": "systems/ptr2e/img/svg/water_icon.svg",
         "traits": [
           "pierce",
+          "weapon",
           "missile",
           "digimon"
         ],
         "cost": {
           "activation": "complex",
-          "powerPoints": 7
+          "powerPoints": 8
         },
         "types": [
           "water"
         ],
         "category": "physical",
         "predicate": [],
-        "description": "<p>This attack has a 20% chance to apply @Affliction[cursed 5].</p>",
+        "description": "<p>Effect: This attack has a 20% chance to apply @Affliction[cursed 5]. If this Attack causes a creature to gain @Affliction[fainted], the user gains @Tick[3 pp].</p>",
         "range": {
           "target": "creature",
           "distance": 8,

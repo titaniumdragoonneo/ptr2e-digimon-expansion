@@ -23,14 +23,19 @@
         "traits": [
           "double-strike",
           "contact",
+          "dash",
+          "sharp",
+          "crit-2",
+          "flinch-10",
           "digimon"
         ],
         "cost": {
           "activation": "complex",
-          "powerPoints": 4
+          "powerPoints": 2
         },
         "types": [
-          "fighting"
+          "fighting",
+          "steel"
         ],
         "category": "physical",
         "predicate": [],
